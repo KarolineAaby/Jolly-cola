@@ -169,9 +169,6 @@ header {
   font-family: var(--overskrift1);
   color: var(--white);
   text-align: left;
-  padding-left: 52%;
-  top: 26%;
-  font-size: 44px;
 }
 
 
@@ -200,6 +197,18 @@ header {
   .navigationsearch {
   display: none;
   }
+  /* JOLLY QUIZ - header */
+  .headerjollyquiz h1 {
+    padding-left: 52%;
+    top: 26%;
+    font-size: 10px;
+  }
+  .headercom {
+    display: none;
+  }
+  .headermobil {
+    display: inline;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -212,6 +221,19 @@ header {
   .dropdown {
     display: none;
   }
+  /* JOLLY QUIZ - header */
+  .headerjollyquiz h1 {
+    padding-left: 56%;
+    padding-right: 7%;
+    top: 18%;
+    font-size: 33px;
+  }
+  .headermobil {
+    display: none;
+  }
+  .headercom {
+    display: inline;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -222,6 +244,19 @@ header {
   }
   /* vis nav computer */
   .dropdown {
+    display: inline;
+  }
+  /* JOLLY QUIZ - header */
+  .headerjollyquiz h1 {
+    padding-left: 52%;
+    padding-right: 0;
+    top: 26%;
+    font-size: 31px;
+  }
+  .headermobil {
+    display: none;
+  }
+  .headercom {
     display: inline;
   }
 }
@@ -236,6 +271,18 @@ header {
   .dropdown {
     display: inline;
   }
+  /* JOLLY QUIZ - header */
+  .headerjollyquiz h1 {
+    padding-left: 52%;
+    top: 26%;
+    font-size: 38px;
+  }
+  .headermobil {
+    display: none;
+  }
+  .headercom {
+    display: inline;
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -247,5 +294,17 @@ header {
   /* vis nav computer */
   .dropdown {
       display: inline;
+  }
+  /* JOLLY QUIZ - header */
+  .headerjollyquiz h1 {
+    padding-left: 52%;
+    top: 26%;
+    font-size: 44px;
+  }
+  .headermobil {
+    display: none;
+  }
+  .headercom {
+    display: inline;
   }
 }
