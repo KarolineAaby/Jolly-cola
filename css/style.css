@@ -197,7 +197,11 @@ footer a {
   margin-top: var(--whitespace);
   margin-bottom: var(--whitespace);
 }
+footer a:hover {
+  color: var(--brown);
+}
 .footer {
+  /*text-align: center; */
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
@@ -343,6 +347,30 @@ footer a {
   .navigationsearch {
   display: none;
   }
+  /* FOOTER */
+  footer h4 {
+    margin-bottom: 13px;
+    margin-top: 30px;
+    font-size: 19px;
+  }
+  footer p {
+    font-size: 18px;
+  }
+  footer a {
+    font-size: 18px;
+  }
+  .footer {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    flex-direction: column;
+  }
+  .footer img{
+    width: 30%;
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+
   /* JOLLY QUIZ - header */
   .headerjollyquiz h1 {
     padding-left: 31%;
@@ -407,6 +435,29 @@ footer a {
   .dropdown {
     display: none;
   }
+  /* FOOTER */
+  footer h4 {
+    margin-bottom: 13px;
+    margin-top: 30px;
+    font-size: 19px;
+  }
+  footer p {
+    font-size: 18px;
+  }
+  footer a {
+    font-size: 18px;
+  }
+  .footer {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    flex-direction: column;
+  }
+  .footer img{
+    width: 15%;
+    margin-top: 10px;
+    margin-bottom: 25px;
+  }
   /* JOLLY QUIZ - header */
   .headerjollyquiz h1 {
     padding-left: 56%;
@@ -462,6 +513,29 @@ footer a {
   /* vis nav computer */
   .dropdown {
     display: inline;
+  }
+  /* FOOTER */
+  footer h4 {
+    margin-bottom: 13px;
+    margin-top: 30px;
+    font-size: 19px;
+  }
+  footer p {
+    font-size: 18px;
+  }
+  footer a {
+    font-size: 18px;
+  }
+  .footer {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    flex-direction: column;
+  }
+  .footer img{
+    width: 14%;
+    margin-top: 10px;
+    margin-bottom: 50px;
   }
   /* JOLLY QUIZ - header */
   .headerjollyquiz h1 {
@@ -522,6 +596,26 @@ footer a {
   .dropdown {
     display: inline;
   }
+  /* FOOTER */
+  footer h4 {
+    margin-bottom: 13px;
+  }
+  footer p {
+    font-size: 15px;
+  }
+  footer a {
+    font-size: 15px;
+  }
+  .footer {
+    text-align: left;
+    padding-top: 90px;
+    padding-bottom: 60px;
+    flex-direction: row;
+  }
+  .footer img{
+    width: 27%;
+    margin-top: 30px;
+  }
   /* JOLLY QUIZ - header */
   .headerjollyquiz h1 {
     padding-left: 52%;
@@ -579,6 +673,26 @@ footer a {
   /* vis nav computer */
   .dropdown {
       display: inline;
+  }
+  /* FOOTER */
+  footer h4 {
+    margin-bottom: 13px;
+  }
+  footer p {
+    font-size: 15px;
+  }
+  footer a {
+    font-size: 15px;
+  }
+  .footer {
+    text-align: left;
+    padding-top: 90px;
+    padding-bottom: 60px;
+    flex-direction: row;
+  }
+  .footer img{
+    width: 27%;
+    margin-top: 30px;
   }
   /* JOLLY QUIZ - header */
   .headerjollyquiz h1 {
