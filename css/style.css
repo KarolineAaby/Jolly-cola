@@ -291,18 +291,25 @@ header {
   }
   /* JOLLY QUIZ - steps */
   .steps h3 {
-    text-align: left;
+    text-align: center;
     font-size: 27px;
   }
   .steps p {
-    text-align: left;
+    text-align: center;
     font-size: 22px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
   .sådangørdu img {
     display: none;
   }
   .step1 img, .step2 img, .step3 img {
     display: inherit;
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
