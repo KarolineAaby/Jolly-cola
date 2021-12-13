@@ -184,9 +184,18 @@ footer {
 }
 footer h4 {
   font-family: var(--overskrift1);
+  margin-bottom: 13px;
 }
 footer p {
   font-size: 15px;
+}
+footer a {
+  text-decoration: none;
+  font-size: 15px;
+  font-family: var(--brødtekst);
+  color: var(--white);
+  margin-top: var(--whitespace);
+  margin-bottom: var(--whitespace);
 }
 .footer {
   display: flex;
@@ -196,10 +205,12 @@ footer p {
   padding: 70px;
   padding-top: 90px;
   padding-bottom: 60px;
+  /* flex-direction: column; */
 }
 .footer img{
   width: 27%;
   height: auto;
+  margin-top: 10px;
 }
 #copyright {
   text-align: center;
@@ -208,7 +219,7 @@ footer p {
   color: var(--white);
   margin-top: 0;
   margin-bottom: 0;
-  padding: 10px;
+  padding: 15px;
 }
 
 
