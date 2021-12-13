@@ -206,8 +206,6 @@ header {
 .sådangørdu h2 {
   color: var(--brown);
   text-align: center;
-  font-size: 38px;
-  margin-top: 70px;
 }
 .sådangørdu img {
   display: block;
@@ -225,15 +223,17 @@ header {
 }
 .steps h3 {
   color: var(--black);
-  text-align: left;
-  font-size: 27px;
 }
 .steps p {
   color: var(--black);
-  text-align: left;
-  font-size: 22px;
   width: 20ch;
+  margin-bottom: 30px;
 }
+/* Dashed red border */
+/*hr.dottedline {
+  border-top: 3px dashed var(--brown);
+  width: 100px;
+}*/
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -284,6 +284,26 @@ header {
     width: 70%;
     padding-top: 40px;
   }
+  /* JOLLY QUIZ - sådan gør du */
+  .sådangørdu h2 {
+    font-size: 38px;
+    margin-top: 70px;
+  }
+  /* JOLLY QUIZ - steps */
+  .steps h3 {
+    text-align: left;
+    font-size: 27px;
+  }
+  .steps p {
+    text-align: left;
+    font-size: 22px;
+  }
+  .sådangørdu img {
+    display: none;
+  }
+  .step1 img, .step2 img, .step3 img {
+    display: inherit;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -319,6 +339,26 @@ header {
   .jollyquiz img{
     width: 70%;
     padding-top: 40px;
+  }
+  /* JOLLY QUIZ - sådan gør du */
+  .sådangørdu h2 {
+    font-size: 38px;
+    margin-top: 70px;
+  }
+  /* JOLLY QUIZ - steps */
+  .steps h3 {
+    text-align: left;
+    font-size: 27px;
+  }
+  .steps p {
+    text-align: left;
+    font-size: 22px;
+  }
+  .sådangørdu img {
+    display: none;
+  }
+  .step1 img, .step2 img, .step3 img {
+    display: inherit;
   }
 }
 
@@ -359,6 +399,26 @@ header {
     width: 70%;
     padding-top: 10px;
   }
+  /* JOLLY QUIZ - sådan gør du */
+  .sådangørdu h2 {
+    font-size: 38px;
+    margin-top: 70px;
+  }
+  /* JOLLY QUIZ - steps */
+  .steps h3 {
+    text-align: left;
+    font-size: 27px;
+  }
+  .steps p {
+    text-align: left;
+    font-size: 22px;
+  }
+  .step1 img, .step2 img, .step3 img {
+    display: none;
+  }
+  .sådangørdu img {
+    display: inherit;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -397,6 +457,26 @@ header {
     width: 70%;
     padding-top: 10px;
   }
+  /* JOLLY QUIZ - sådan gør du */
+  .sådangørdu h2 {
+    font-size: 38px;
+    margin-top: 70px;
+  }
+  /* JOLLY QUIZ - steps */
+  .steps h3 {
+    text-align: left;
+    font-size: 27px;
+  }
+  .steps p {
+    text-align: left;
+    font-size: 22px;
+  }
+  .step1 img, .step2 img, .step3 img {
+    display: none;
+  }
+  .sådangørdu img {
+    display: inherit;
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -434,5 +514,25 @@ header {
   .jollyquiz img{
     width: 80%;
     padding-top: 10px;
+  }
+  /* JOLLY QUIZ - sådan gør du */
+  .sådangørdu h2 {
+    font-size: 38px;
+    margin-top: 70px;
+  }
+  /* JOLLY QUIZ - steps */
+  .steps h3 {
+    text-align: left;
+    font-size: 27px;
+  }
+  .steps p {
+    text-align: left;
+    font-size: 22px;
+  }
+  .step1 img, .step2 img, .step3 img {
+    display: none;
+  }
+  .sådangørdu img {
+    display: inherit;
   }
 }
