@@ -229,11 +229,45 @@ header {
   width: 20ch;
   margin-bottom: 30px;
 }
-/* Dashed red border */
-/*hr.dottedline {
-  border-top: 3px dashed var(--brown);
-  width: 100px;
-}*/
+/* JOLLY QUIZ - vidste du */
+.vidstedu {
+  background-color: var(--yellow);
+  width: 100%;
+  height: 494px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+.vidstedu h2 {
+  color: var(--brown);
+  font-family: var(--overskrift1);
+}
+.vidstedu h3 {
+  color: var(--brown);
+}
+.vidstedu img{
+  margin-left: 0;
+  margin-top: 30px;
+}
+/* JOLLY QUIZ - vidste du button */ /* https://www.w3schools.com/css/tryit.asp?filename=trycss_link_advanced */
+.vidstedu a {
+  font-family: var(--overskrift2);
+  font-size: 20px;
+}
+.vidstedu a:link, .vidstedu a:visited {
+  background-color: var(--brown);
+  color: var(--white);
+  padding: 14px 50px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: 0px 0px 5px var(--brown);
+}
+.vidstedu a:hover, .vidstedu a:active {
+  background-color: var(--darkred);
+}
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -287,7 +321,7 @@ header {
   /* JOLLY QUIZ - sådan gør du */
   .sådangørdu h2 {
     font-size: 38px;
-    margin-top: 70px;
+    margin-top: 50px;
   }
   /* JOLLY QUIZ - steps */
   .steps h3 {
@@ -306,10 +340,11 @@ header {
   }
   .step1 img, .step2 img, .step3 img {
     display: inherit;
-    width: 90%;
+    width: 89%;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 20px;
   }
 }
 
