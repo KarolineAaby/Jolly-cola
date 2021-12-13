@@ -174,6 +174,44 @@ header {
   background-color: var(--darkred)
 }
 
+/* FOOTER */
+footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--darkred);
+  color: var(--white);
+}
+footer h4 {
+  font-family: var(--overskrift1);
+}
+footer p {
+  font-size: 15px;
+}
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-evenly;
+  padding: 70px;
+  padding-top: 90px;
+  padding-bottom: 60px;
+}
+.footer img{
+  width: 27%;
+  height: auto;
+}
+#copyright {
+  text-align: center;
+  font-family: var(--brødtekst);
+  font-size: 13px;
+  color: var(--white);
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 10px;
+}
+
+
 /* JOLLY QUIZ - header */
 .headerjollyquiz h1 {
   position: absolute;
