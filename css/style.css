@@ -19,6 +19,7 @@
   --red: #E3212C;
   --darkred: #C82027;
   --brown: #3C2815;
+  --black: #030303;
 
   /* whitespace */
   --whitespace: .5rem;
@@ -212,6 +213,26 @@ header {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+/* JOLLY QUIZ - steps */
+.steps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-around;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+.steps h3 {
+  color: var(--black);
+  text-align: left;
+  font-size: 27px;
+}
+.steps p {
+  color: var(--black);
+  text-align: left;
+  font-size: 22px;
+  width: 20ch;
 }
 
 /* Extra small devices (phones, 600px and down) */
