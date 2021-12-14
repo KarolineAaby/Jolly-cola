@@ -328,6 +328,47 @@ footer a:hover {
   background-color: var(--darkred);
 }
 
+/* DIN JOLLY QUIZ - section 1 */
+.dinjollyquiz {
+  background-color: var(--darkred);
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px;
+}
+.dinjollyquiz h2 {
+  color: var(--white);
+  text-shadow: 0px 0px 5px var(--brown);
+  width: 29ch;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.dinjollyquiz img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* DIN JOLLY QUIZ - hjernevridder */
+.hjernevrider img{
+  width: 80%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+.hjernevrider {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-around;
+}
+
+
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   /* burgermenu */
@@ -429,6 +470,20 @@ footer a:hover {
     margin-right: auto;
     margin-top: 20px;
   }
+  /* DIN JOLLY QUIZ - section 1 */
+  .dinjollyquiz {
+    height: 300px;
+    justify-content: center;
+  }
+  .dinjollyquiz h2 {
+    font-size: 30px;
+    margin-top: 40px;
+    margin-bottom: 0px;
+  }
+  .dinjollyquiz img{
+    width: 70%;
+    margin-top: 0px;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -518,6 +573,20 @@ footer a:hover {
     margin: 50px;
     margin-bottom: 15px;
   }
+  /* DIN JOLLY QUIZ - section 1 */
+  .dinjollyquiz {
+    height: 300px;
+    justify-content: center;
+  }
+  .dinjollyquiz h2 {
+    font-size: 30px;
+    margin-top: 40px;
+    margin-bottom: 0px;
+  }
+  .dinjollyquiz img{
+    width: 70%;
+    margin-top: 0px;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -600,6 +669,22 @@ footer a:hover {
   .sådangørdu img {
     display: inherit;
   }
+  /* DIN JOLLY QUIZ - section 1 */
+  .dinjollyquiz {
+    height: 300px;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .dinjollyquiz h2 {
+    font-size: 35px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .dinjollyquiz img{
+    width: 30%;
+    margin-top: 0px;
+    margin-bottom: 90px;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -678,6 +763,22 @@ footer a:hover {
   .sådangørdu img {
     display: inherit;
   }
+  /* DIN JOLLY QUIZ - section 1 */
+  .dinjollyquiz {
+    height: 320px;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .dinjollyquiz h2 {
+    font-size: 38px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .dinjollyquiz img{
+    width: 30%;
+    margin-top: 0px;
+    margin-bottom: 110px;
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -755,5 +856,21 @@ footer a:hover {
   }
   .sådangørdu img {
     display: inherit;
+  }
+  /* DIN JOLLY QUIZ - section 1 */
+  .dinjollyquiz {
+    height: 380px;
+    flex-direction: column;
+    gap: 50px;
+  }
+  .dinjollyquiz h2 {
+    font-size: 38px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .dinjollyquiz img{
+    width: 22%;
+    margin-top: 0px;
+    margin-bottom: 130px;
   }
 }
