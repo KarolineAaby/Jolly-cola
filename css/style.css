@@ -28,6 +28,9 @@
   --overskrift1: 'filicudi-solid', sans-serif; /* overskrift 1 */
   --overskrift2: 'interface', sans-serif; /* overskrift 2 */
   --brødtekst: 'myriad-pro', sans-serif; /* brødtekst */
+
+  /* teksturer ("fliselagte baggrunde") */
+  --line: url('../images/line.png');
 }
 
 * {
@@ -425,6 +428,23 @@ footer a:hover {
   flex-wrap: wrap;
   gap: 10px;
   justify-content: space-around;
+}
+
+/* HISTORIEN - 1959 */
+.første {
+  display: flex;
+  flex-direction: row;
+}
+.første img {
+  width: 100%;
+  height:auto;
+}
+
+.historien {
+  background-image: linear-gradient(#000, #000);
+  background-size: 2px 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 /* Extra small devices (phones, 600px and down) */
