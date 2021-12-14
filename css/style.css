@@ -28,9 +28,6 @@
   --overskrift1: 'filicudi-solid', sans-serif; /* overskrift 1 */
   --overskrift2: 'interface', sans-serif; /* overskrift 2 */
   --brødtekst: 'myriad-pro', sans-serif; /* brødtekst */
-
-  /* teksturer ("fliselagte baggrunde") */
-  --line: url('../images/line.png');
 }
 
 * {
@@ -430,22 +427,59 @@ footer a:hover {
   justify-content: space-around;
 }
 
-/* HISTORIEN - 1959 */
+/* HISTORIEN - overskrift */
+.historientekst h2 {
+  text-align: center;
+  font-family: var(--overskrift1);
+  color: var(--brown);
+  font-size: 30px;
+}
+.historientekst {
+  padding: 30px;
+}
+/* HISTORIEN - */
 .første {
   display: flex;
   flex-direction: row;
 }
+.første p{
+  width: 35%;
+  font-family: var(--brødtekst);
+  color: var(--brown);
+  font-size: 22px;
+  text-align: left;
+  padding: 30px;
+}
 .første img {
-  width: 100%;
+  width: 65%;
   height:auto;
 }
-
+/* HISTORIEN - tidslinje */
 .historien {
   background-image: linear-gradient(#000, #000);
+  background-color: var(--yellow);
   background-size: 2px 100%;
   background-repeat: no-repeat;
   background-position: center center;
 }
+.årstal {
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  border-radius: 50%;
+  color: var(--white);
+  font-family: var(--overskrift2);
+  font-size: 32px;
+  text-align: center;
+  background: var(--red);
+
+  display: block;
+  position: absolute;
+  left: 50%;
+  margin-left: -2.3rem;
+  z-index: 998;
+}
+
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
