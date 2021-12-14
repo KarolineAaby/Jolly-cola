@@ -380,15 +380,17 @@ footer a:hover {
 }
 /* DIN JOLLY QUIZ - buttons*/
 .btnhjernevrider {
-  display: flex;
+  /*display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  justify-content: space-evenly;
-  flex-direction: column;
+  flex-direction: column; /* PLACER I MIDTE - aflang */
 }
 /* DIN JOLLY QUIZ - button download */
 .btn1hjernevrider {
   font-family: var(--overskrift2);
+  /* display: block;
+  margin-left: 50px;
+  margin-right: 50px; */ /* PLACER I MIDTE */
 }
 .btn1hjernevrider:link, .btn1hjernevrider:visited {
   background-color: var(--brown);
@@ -564,6 +566,13 @@ footer a:hover {
   }
   .hjernevrider p a {
     display: none;
+  }
+  /* DIN JOLLY QUIZ - buttons*/
+  .btnhjernevrider {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    flex-direction: column; /* PLACER I MIDTE / column */
   }
   /* DIN JOLLY QUIZ - button download */
   .btn1hjernevrider {
@@ -994,8 +1003,12 @@ footer a:hover {
   .hjernevrider p a {
     display: contents;
   }
+  /* DIN JOLLY QUIZ - buttons*/
+  .btnhjernevrider {
+    flex-direction: column;
+  }
   /* DIN JOLLY QUIZ - button download */
-  .btn1hjernevrider {
+  .btnhjernevrider .btn1hjernevrider {
     display: none;
   }
   /* DIN JOLLY QUIZ - button se løsningen */
@@ -1003,5 +1016,6 @@ footer a:hover {
     font-size: 20px;
     margin-top: 0px;
     margin-bottom: 0px;
+    margin-left: 10px;
   }
 }
