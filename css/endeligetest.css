@@ -427,6 +427,8 @@ footer a:hover {
   justify-content: space-around;
 }
 
+
+
 /* HISTORIEN - overskrift */
 .historientekst h2 {
   text-align: center;
@@ -437,142 +439,85 @@ footer a:hover {
 .historientekst {
   padding: 30px;
 }
-/* HISTORIEN - billede til venstre*/
-.første {
-  display: flex;
-  flex-direction: row;
-  /* gap: 310px; */
-  /* justify-content: space-around; */
-  padding-top: 60px;
-}
-.første p{
-  width: 35ch; /* eller 35% */
-  font-family: var(--brødtekst);
-  color: var(--brown);
-  font-size: 22px;
-  text-align: left;
-  /*padding: 70px;
-  margin-left: 15%; */
-}
-.første img {
-  width: 100%;
-  height:auto;
-}
 
-/* HISTORIEN - billede til højre*/
-.anden {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
+/* ENDELIGE HISTORIEN TEST */
+/* 2 HISTORIEN TEST 2 */
+#historien {
+  /* position: relative;*/
+  padding: 2em 0;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
-.anden p{
-  width: 35ch;
-  font-family: var(--brødtekst);
-  color: var(--brown);
-  font-size: 22px;
-  text-align: right;
-  margin-left: 26%;
-  margin-top: 20px;
-  /*display: block;
-  position: absolute;
-  left: 50%;
-  margin-left: -2.3rem;
-  z-index: 998;*/
-}
-.anden h3 {
-  width: 35ch;
-  font-family: var(--overskrift2);
-  color: var(--red);
-  font-size: 30px;
-  text-align: right;
-
-  margin-top: 30px;
-}
-.anden img {
-  width: 100%;
-  height:auto;
-}
-
-
-/* PRØVE TO !!! */
-/* HISTORIEN - billede til venstre*/
-.venstre {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  /*gap: 310px;*/
-  /* justify-content: space-around; */
-  padding-top: 60px;
-}
-.venstre p{
-  width: 35ch; /* eller 35% */
-  font-family: var(--brødtekst);
-  color: var(--brown);
-  font-size: 22px;
-  text-align: left;
-  margin-top: 30px;
-  display: block;
-  position: absolute;
-  left: 66%;
-  margin-left: -2.3rem;
-  z-index: 998;
-  /*margin: 70px; /*
-  margin-left: 15%; */
-}
-.venstre img {
-  width: 100%;
-  height:auto;
-}
-
-/* HISTORIEN - billede til højre*/
-.højre {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row-reverse;
-}
-.højre p{
-  width: 35ch;
-  font-family: var(--brødtekst);
-  color: var(--brown);
-  font-size: 22px;
-  text-align: right;
-  margin-left: 26%;
-  margin-top: 20px;
-  /*display: block;
-  position: absolute;
-  left: 50%;
-  margin-left: -2.3rem;
-  z-index: 998;*/
-}
-.højre h3 {
-  width: 35ch;
-  font-family: var(--overskrift2);
-  color: var(--red);
-  font-size: 30px;
-  text-align: right;
-  margin-top: 30px;
-}
-.højre img {
-  width: 35%;
-  height:auto;
-  display: block;
-  position: absolute;
-
-  right: 0;
-  z-index: 998;
-}
-
-
-
-/* HISTORIEN - tidslinje */
-.historien { /*https://stackoverflow.com/questions/1179928/how-can-i-put-a-vertical-line-down-the-center-of-a-div*/
+/* vertical line */
+#historien {
   background-image: linear-gradient(#000, #000);
   background-color: var(--white);
   background-size: 2px 100%;
   background-repeat: no-repeat;
   background-position: center center;
 }
-.årstalrød { /*https://stackoverflow.com/questions/16615403/how-to-draw-a-circle-with-text-in-the-middle */
+/*.historie::after {
+  content: '';
+  display: table;
+  clear: both;
+}*/
+.historie {
+  width: 100%;
+  max-width: 1350px;
+  margin: 0 auto;
+}
+.begivenhed:first-child {
+  margin-top: 0;
+}
+.begivenhed {
+  position: relative;
+  margin: 20em 0;
+}
+/*.begivenhed:last-child {
+  margin-bottom: 20em;
+}*/
+.begivenhed {
+  margin-left: 0;
+  /* padding: 1.6em; */
+  width: 42%;
+  position: relative;
+  /* border-radius: 0.25em;*/
+  /* padding: 1em; */
+}
+.begivenhedtekstleft {
+  padding-left: 1.6em;
+  text-align: right;
+  font-family: var(--brødtekst);
+  font-size: 24px;
+}
+.begivenhedtekstright {
+  padding-right: 1.6em;
+  text-align: left;
+  font-family: var(--brødtekst);
+  font-size: 24px;
+}
+.begivenhed .placering, .begivenhed .begivenhedtekstright {
+  position: absolute;
+  width: 100%;
+  left: 138%;
+  top: 6px;
+}
+/*.begivenhed:nth-child(even) .begivenhed .cd-date {
+  left: auto;
+  right: 122%;
+  text-align: right;
+}*/
+/*
+.begivenhed:nth-child(even) .begivenhed {
+  float: right;
+}*/
+/*
+.begivenhed:after {
+  content: "";
+  display: table;
+  clear: both;
+}*/
+.årstalrød {
   width: 80px;
   height: 80px;
   line-height: 80px;
@@ -582,14 +527,11 @@ footer a:hover {
   font-size: 32px;
   text-align: center;
   background: var(--red);
-
   display: block;
   position: absolute;
-  left: 50%;
-  margin-left: -2.3rem;
-  z-index: 998;
+  left: 112%;
+  z-index: 1;
 }
-
 .årstalbrun {
   width: 80px;
   height: 80px;
@@ -600,71 +542,15 @@ footer a:hover {
   font-size: 32px;
   text-align: center;
   background: var(--brown);
-
   display: block;
   position: absolute;
-  left: 50%;
-  margin-left: -2.3rem;
-  z-index: 998;
+  left: 112%;
+  z-index: 1;
 }
 
-/*.line:after {
-  content: '';
-      width: 0;
-      height: 100%;
-      position: absolute;
-      border: solid #979797;
-      border-width: 0 0 0 0.125rem;
-      top: 0;
-      left: 50%;
-      margin-left: -0.0625rem;
-      z-index: 997;
-}
 
-/*.historien div {
-    margin: 10px auto;
-    width: 60%;
-    height: 100px;
-    position:relative;
-    text-align:center
-}
 
-/*.vl {
-  border-left: 6px solid green;
-  height: 500px;
-} */
-/*.historien {
-  background-image: var(--line);
-  background-size: auto 100%;
-  background: no-repeat;
-  background-position:center;
-} */
 
-/*.årstal {
-  content: '';
-    width: 3.125rem;
-    height: 3.125rem;
-    display: block;
-    background: no-repeat 0 0 url(https://static.coke.com/assets/nextgen/bottle.png);
-    background-size: 3.125rem 3.125rem;
-    position: absolute;
-    left: 50%;
-    margin-left: -1.5625rem;
-    z-index: 998;
-} */
-
-/* line {
-content: '';
-    width: 0;
-    height: 100%;
-    position: absolute;
-    border: solid #979797;
-    border-width: 0 0 0 0.125rem;
-    top: 0;
-    left: 50%;
-    margin-left: -0.0625rem;
-    z-index: 997;
-}
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
