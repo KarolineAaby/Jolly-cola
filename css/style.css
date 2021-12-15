@@ -283,16 +283,12 @@ footer a:hover {
   margin-bottom: 30px;
 }
 /* JOLLY QUIZ - vidste du */
-/* .vidstedu {
+.vidstedu {
   background-color: var(--yellow);
   width: 100%;
-  height: 494px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  justify-content: space-between;
-  flex-direction: row-reverse;
-} */
+  height: auto;
+  margin-top: 60px;
+}
 .vidstedu h2 {
   color: var(--brown);
   font-family: var(--overskrift1);
@@ -300,16 +296,18 @@ footer a:hover {
 .vidstedu h3 {
   color: var(--brown);
 }
+.vidstedu p {
+  color: var(--brown);
+  width: 70%;
+}
 .vidstedu img {
   margin: 0;
   padding: 0;
   width: 100%;
+  height: auto;
+  margin-top: 10%;
+  margin-bottom: -4px;
 }
-/* .vidstedu img{
-  margin-left: 0;
-  margin-top: 30px;
-}
-*/
 /* JOLLY QUIZ - vidste du button */ /* https://www.w3schools.com/css/tryit.asp?filename=trycss_link_advanced */
 .vidstedu a {
   font-family: var(--overskrift2);
@@ -327,6 +325,9 @@ footer a:hover {
 .vidstedu a:hover, .vidstedu a:active {
   background-color: var(--darkred);
 }
+
+
+
 
 /* DIN JOLLY QUIZ - section 1 */
 .dinjollyquiz {
@@ -767,6 +768,39 @@ content: '';
     margin-right: auto;
     margin-top: 20px;
   }
+  /* JOLLY QUIZ - vidste du */
+  .vidstedu {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .vidstedu h2 {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 40px;
+  }
+  .vidstedu h3 {
+    width: 20ch;
+    font-size: 30px;
+    text-align: center;
+    margin: auto;
+  }
+  .vidstedu p {
+    width: 32ch;
+    font-size: 22px;
+    text-align: center;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  /* JOLLY QUIZ - vidste du button */
+  .vidstedu a {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
   /* DIN JOLLY QUIZ - section 1 */
   .dinjollyquiz {
     height: 300px;
@@ -1198,6 +1232,30 @@ content: '';
   .sådangørdu img {
     display: inherit;
   }
+  /* JOLLY QUIZ - vidste du */
+  .vidstedu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    /*flex-wrap: wrap;
+    gap: 10px;
+    */
+  }
+  .vidstedu h2 {
+    font-size: #;
+  }
+  .vidstedu h3 {
+    font-size: #;
+  }
+  .vidstedu p {
+    width: 70%;
+    font-size: #;
+  }
+  /* JOLLY QUIZ - vidste du button */
+  .vidstedu a {
+    font-size: 20px;
+  }
   /* DIN JOLLY QUIZ - section 1 */
   .dinjollyquiz {
     height: 380px;
@@ -1216,6 +1274,7 @@ content: '';
   }
   /* DIN JOLLY QUIZ - hjernevridder */
   .hjernevrider {
+    align-items: flex-end;
     /*flex-direction: row; */
   }
   .hjernevrider img{
