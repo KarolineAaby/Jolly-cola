@@ -165,10 +165,13 @@ font-family: var(--overskrift1);
 .navburger {
   padding: 20px;
 }
+
+
 /* header */
 header {
   position: relative;
   width: 100%;
+  background-color: var(--darkred)
 }
 
 /* FOOTER */
@@ -222,103 +225,9 @@ footer a:hover {
   margin-bottom: 0;
   padding: 15px;
 }
-/* FORSIDE - header */
-.headerforside {
-  background-color: var(--darkred)
-}
-.hashtag {
-  position: absolute;
-}
-.headerforside h1 {
-  position: absolute;
-  font-family: var(--overskrift1);
-  color: var(--brown);
-  text-align: left;
-  text-shadow: #d9d3cc 3px 3px 2px;
-}
-.headerforside h2 {
-  position: absolute;
-  font-family: var(--overskrift2);
-  color: var(--brown);
-  text-align: left;
-}
-/* FORSIDE - konkurrence */
-.konkurrence {
-  background-color: var(--darkred);
-  width: 100%;
-  height: 560px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 5px;
-  justify-content: space-around;
-}
-.konkurrence img{
-  width: 100%;
-  height: auto;
-}
-.konkurrence h2 {
-  font-family: var(--overskrift1);
-  color: var(--white);
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-.konkurrence h3 {
-  font-family: var(--overskrift2);
-  color: var(--white);
-  width: 23ch;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-.konkurrence p {
-  font-family: var(--brødtekst);
-  color: var(--white);
-  width: 30ch;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-/* konkurrence - button */
-.btn1konkurrence {
-  font-family: var(--overskrift2);
-}
-.btn1konkurrence:link, .btn1konkurrence:visited {
-  background-color: var(--brown);
-  color: var(--white);
-  padding: 14px 50px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  box-shadow: 0px 0px 5px var(--brown);
-}
-.btn1konkurrence:hover, .btn1konkurrence:active {
-  background-color: var(--orange);
-}
-/* FORSIDE - historien */
-/* historien - button */
-.btnhistorieforside {
-  font-family: var(--overskrift1);
-  width: 15ch;
-  font-size: 25px;
-  border-radius: 10px;
-}
-.btnhistorieforside:link, .btnhistorieforside:visited {
-  background-color: var(--brown);
-  color: var(--white);
-  padding: 20px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-}
-.btnhistorieforside:hover, .btnhistorieforside:active {
-  background-color: var(--orange);
-}
+
 
 /* JOLLY QUIZ - header */
-.headerjollyquiz {
-  background-color: var(--darkred)
-}
 .headerjollyquiz h1 {
   position: absolute;
   font-family: var(--overskrift1);
@@ -374,58 +283,39 @@ footer a:hover {
   margin-bottom: 30px;
 }
 /* JOLLY QUIZ - vidste du */
-.vidstedu {
+/* .vidstedu {
   background-color: var(--yellow);
-  padding-top: 40px;
-  margin-top: 60px;
+  width: 100%;
+  height: 494px;
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  justify-content: space-around;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+} */
+.vidstedu h2 {
+  color: var(--brown);
+  font-family: var(--overskrift1);
 }
-.vidstedu img{
+.vidstedu h3 {
+  color: var(--brown);
+}
+.vidstedu img {
   margin: 0;
   padding: 0;
   width: 100%;
-  height: auto;
-  margin-top: 10%;
-  margin-bottom: -4px;
 }
-.vidstedu h2 {
-  font-family: var(--overskrift1);
-  color: var(--brown);
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+/* .vidstedu img{
+  margin-left: 0;
+  margin-top: 30px;
 }
-.vidstedu h3 {
+*/
+/* JOLLY QUIZ - vidste du button */ /* https://www.w3schools.com/css/tryit.asp?filename=trycss_link_advanced */
+.vidstedu a {
   font-family: var(--overskrift2);
-  color: var(--brown);
-  width: 23ch;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  font-size: 20px;
 }
-.vidstedu p {
-  font-family: var(--brødtekst);
-  color: var(--brown);
-  width: 23ch;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-.vidstedu p a {
-  color: var(--red);
-  text-decoration: none;
-}
-.vidstedu p a:hover {
-  color: var(--brown);
-}
-/* VIDSTE DU - button */
-.btn1vidstedu {
-  font-family: var(--overskrift2);
-}
-.btn1vidstedu:link, .btn1vidstedu:visited {
+.vidstedu a:link, .vidstedu a:visited {
   background-color: var(--brown);
   color: var(--white);
   padding: 14px 50px;
@@ -434,7 +324,7 @@ footer a:hover {
   display: inline-block;
   box-shadow: 0px 0px 5px var(--brown);
 }
-.btn1vidstedu:hover, .btn1vidstedu:active {
+.vidstedu a:hover, .vidstedu a:active {
   background-color: var(--darkred);
 }
 
@@ -537,6 +427,8 @@ footer a:hover {
   justify-content: space-around;
 }
 
+
+
 /* HISTORIEN - overskrift */
 .historientekst h2 {
   text-align: center;
@@ -547,142 +439,134 @@ footer a:hover {
 .historientekst {
   padding: 30px;
 }
-/* HISTORIEN - billede til venstre*/
-.første {
-  display: flex;
-  flex-direction: row;
-  /* gap: 310px; */
-  /* justify-content: space-around; */
-  padding-top: 60px;
-}
-.første p{
-  width: 35ch; /* eller 35% */
-  font-family: var(--brødtekst);
-  color: var(--brown);
-  font-size: 22px;
-  text-align: left;
-  /*padding: 70px;
-  margin-left: 15%; */
-}
-.første img {
-  width: 100%;
-  height:auto;
-}
 
-/* HISTORIEN - billede til højre*/
-.anden {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
+/* ENDELIGE HISTORIEN TEST */
+/* 2 HISTORIEN TEST 2 */
+#historien {
+  position: relative; /*?*/
+  padding: 2em 0;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
-.anden p{
-  width: 35ch;
-  font-family: var(--brødtekst);
-  color: var(--brown);
-  font-size: 22px;
-  text-align: right;
-  margin-left: 26%;
-  margin-top: 20px;
-  /*display: block;
+/* vertical line */
+#historien::before {
+  content: '';
   position: absolute;
+  top: 0;
+  height: 100%;
+  width: 4px;
+  background: #d7e4ed;
   left: 50%;
-  margin-left: -2.3rem;
-  z-index: 998;*/
+  margin-left: -2px;
 }
-.anden h3 {
-  width: 35ch;
-  font-family: var(--overskrift2);
-  color: var(--red);
-  font-size: 30px;
-  text-align: right;
-
-  margin-top: 30px;
-}
-.anden img {
-  width: 100%;
-  height:auto;
-}
-
-
-/* PRØVE TO !!! */
-/* HISTORIEN - billede til venstre*/
-.venstre {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  /*gap: 310px;*/
-  /* justify-content: space-around; */
-  padding-top: 60px;
-}
-.venstre p{
-  width: 35ch; /* eller 35% */
-  font-family: var(--brødtekst);
-  color: var(--brown);
-  font-size: 22px;
-  text-align: left;
-  margin-top: 30px;
-  display: block;
-  position: absolute;
-  left: 66%;
-  margin-left: -2.3rem;
-  z-index: 998;
-  /*margin: 70px; /*
-  margin-left: 15%; */
-}
-.venstre img {
-  width: 100%;
-  height:auto;
-}
-
-/* HISTORIEN - billede til højre*/
-.højre {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row-reverse;
-}
-.højre p{
-  width: 35ch;
-  font-family: var(--brødtekst);
-  color: var(--brown);
-  font-size: 22px;
-  text-align: right;
-  margin-left: 26%;
-  margin-top: 20px;
-  /*display: block;
-  position: absolute;
-  left: 50%;
-  margin-left: -2.3rem;
-  z-index: 998;*/
-}
-.højre h3 {
-  width: 35ch;
-  font-family: var(--overskrift2);
-  color: var(--red);
-  font-size: 30px;
-  text-align: right;
-  margin-top: 30px;
-}
-.højre img {
-  width: 35%;
-  height:auto;
-  display: block;
-  position: absolute;
-
-  right: 0;
-  z-index: 998;
-}
-
-
-
-/* HISTORIEN - tidslinje */
-.historien { /*https://stackoverflow.com/questions/1179928/how-can-i-put-a-vertical-line-down-the-center-of-a-div*/
+/*#historien {
   background-image: linear-gradient(#000, #000);
   background-color: var(--white);
   background-size: 2px 100%;
   background-repeat: no-repeat;
   background-position: center center;
+} */
+.historie::after {
+  content: '';
+  display: table;
+  clear: both;
 }
-.årstalrød { /*https://stackoverflow.com/questions/16615403/how-to-draw-a-circle-with-text-in-the-middle */
+.historie {
+  width: 90%;
+  max-width: 1170px;
+  margin: 0 auto;
+  /*width: 100%;
+  max-width: 1350px;
+  margin: 0 auto;*/
+}
+.begivenhed:first-child {
+  margin-top: 0;
+}
+.begivenhed {
+  position: relative;
+  margin: 20em 0;
+}
+/*.begivenhed:last-child {
+  margin-bottom: 20em;
+}*/
+.begivenhed {
+  margin-left: 0;
+  padding: 1.6em;
+  width: 42%;
+  position: relative;
+  background: white;
+  border-radius: 0.25em;
+  padding: 1em;
+  box-shadow: 0 3px 0 #d7e4ed;
+  /* margin-left: 0;
+  width: 42%;
+  position: relative; */
+}
+.begivenhed .cd-date {
+  position: absolute;
+  width: 100%;
+  left: 140%;
+  top: 6px;
+  font-size: 16px;
+  font-size: 1rem;
+}
+.begivenhed:nth-child(even) .begivenhed .cd-date {
+  left: auto;
+  right: 122%;
+  text-align: right;
+}
+.begivenhed:nth-child(even) .begivenhed {
+  float: right;
+}
+.begivenhed:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.begivenhedtekstleft {
+  /*margin-left: 0;
+  padding: 1.6em;
+  width: 42%;
+  position: relative;
+  background: white;
+  border-radius: 0.25em;
+  padding: 1em;
+  box-shadow: 0 3px 0 #d7e4ed;
+  /*padding-left: 1.6em;
+  text-align: right;
+  font-family: var(--brødtekst);
+  font-size: 24px;*/
+}
+.begivenhedtekstright {
+  /*padding-right: 1.6em;
+  text-align: left;
+  font-family: var(--brødtekst);
+  font-size: 24px;*/
+}
+/*.begivenhed .placering, .begivenhed .begivenhedtekstright {
+  position: absolute;
+  width: 100%;
+  left: 138%;
+  top: 6px;
+}*/
+
+/*.begivenhed:nth-child(even) .begivenhed .cd-date {
+  left: auto;
+  right: 122%;
+  text-align: right;
+}*/
+/*
+.begivenhed:nth-child(even) .begivenhed {
+  float: right;
+}*/
+/*
+.begivenhed:after {
+  content: "";
+  display: table;
+  clear: both;
+}*/
+.årstalrød {
   width: 80px;
   height: 80px;
   line-height: 80px;
@@ -692,14 +576,11 @@ footer a:hover {
   font-size: 32px;
   text-align: center;
   background: var(--red);
-
   display: block;
   position: absolute;
-  left: 50%;
-  margin-left: -2.3rem;
-  z-index: 998;
+  left: 112%;
+  z-index: 1;
 }
-
 .årstalbrun {
   width: 80px;
   height: 80px;
@@ -710,71 +591,15 @@ footer a:hover {
   font-size: 32px;
   text-align: center;
   background: var(--brown);
-
   display: block;
   position: absolute;
-  left: 50%;
-  margin-left: -2.3rem;
-  z-index: 998;
+  left: 112%;
+  z-index: 1;
 }
 
-/*.line:after {
-  content: '';
-      width: 0;
-      height: 100%;
-      position: absolute;
-      border: solid #979797;
-      border-width: 0 0 0 0.125rem;
-      top: 0;
-      left: 50%;
-      margin-left: -0.0625rem;
-      z-index: 997;
-}
 
-/*.historien div {
-    margin: 10px auto;
-    width: 60%;
-    height: 100px;
-    position:relative;
-    text-align:center
-}
 
-/*.vl {
-  border-left: 6px solid green;
-  height: 500px;
-} */
-/*.historien {
-  background-image: var(--line);
-  background-size: auto 100%;
-  background: no-repeat;
-  background-position:center;
-} */
 
-/*.årstal {
-  content: '';
-    width: 3.125rem;
-    height: 3.125rem;
-    display: block;
-    background: no-repeat 0 0 url(https://static.coke.com/assets/nextgen/bottle.png);
-    background-size: 3.125rem 3.125rem;
-    position: absolute;
-    left: 50%;
-    margin-left: -1.5625rem;
-    z-index: 998;
-} */
-
-/* line {
-content: '';
-    width: 0;
-    height: 100%;
-    position: absolute;
-    border: solid #979797;
-    border-width: 0 0 0 0.125rem;
-    top: 0;
-    left: 50%;
-    margin-left: -0.0625rem;
-    z-index: 997;
-}
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -824,67 +649,19 @@ content: '';
     margin-top: 10px;
     margin-bottom: 15px;
   }
-  /* header vis mobil eller computer - alle */
-  .headercom {
-    display: none;
-  }
-  .headermobil {
-    display: inline;
-  }
-  /* FORSIDE - header */
-  .hashtag {
-    width: 32%;
-    top: 6%;
-    left: 6%;
-    margin: auto;
-  }
-  .headerforside h1 {
-    top: 8%;
-    left: 40%;
-    font-size: 26px;
-  }
-  .headerforside h2 {
-    top: 21%;
-    left: 40%;
-    font-size: 18px;
-  }
-  /* FORSIDE - konkurrence */
-  .konkurrence img{
-    width: 85%;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .konkurrence h2 {
-    text-align: center;
-    font-size: 30px;
-  }
-  .konkurrence h3 {
-    text-align: center;
-    font-size: 25px;
-  }
-  .konkurrence p {
-    text-align: center;
-    font-size: 20px;
-  }
-  /* konkurrence - button*/
-  .btnkonkurrence {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-  }
-  .btn1konkurrence {
-    font-size: 20px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
+
   /* JOLLY QUIZ - header */
   .headerjollyquiz h1 {
     padding-left: 31%;
     padding-right: 10%;
     top: 5%;
     font-size: 26px;
+  }
+  .headercom {
+    display: none;
+  }
+  .headermobil {
+    display: inline;
   }
   /* JOLLY QUIZ - section 1 */
   .jollyquiz h2 {
@@ -925,39 +702,6 @@ content: '';
     margin-right: auto;
     margin-top: 20px;
   }
-  /* VIDSTE DU */
-  .vidstedu img{
-    width: 100%;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .vidstedu h2 {
-    text-align: center;
-    font-size: 30px;
-  }
-  .vidstedu h3 {
-    text-align: center;
-    font-size: 25px;
-  }
-  .vidstedu p {
-    text-align: center;
-    font-size: 20px;
-  }
-  /* VIDSTE DU - button*/
-  .btnvidstedu {
-    display: flex;
-    flex-wrap: wrap;
-    /* gap: 10px;*/
-    flex-direction: column; /* PLACER I MIDTE / column */
-  }
-  .btn1vidstedu {
-    font-size: 20px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-
   /* DIN JOLLY QUIZ - section 1 */
   .dinjollyquiz {
     height: 300px;
@@ -1051,66 +795,18 @@ content: '';
     margin-top: 10px;
     margin-bottom: 25px;
   }
-  /* header vis mobil eller computer - alle */
-  .headermobil {
-    display: none;
-  }
-  .headercom {
-    display: inline;
-  }
-  /* FORSIDE - header */
-  .hashtag {
-    width: 18%;
-    top: 15%;
-    left: 6%;
-  }
-  .headerforside h1 {
-    top: 21%;
-    left: 26%;
-    font-size: 26px;
-  }
-  .headerforside h2 {
-    top: 50%;
-    left: 7%;
-    font-size: 24px;
-  }
-  /* FORSIDE - konkurrence */
-  .konkurrence img{
-    width: 60%;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .konkurrence h2 {
-    text-align: center;
-    font-size: 30px;
-  }
-  .konkurrence h3 {
-    text-align: center;
-    font-size: 25px;
-  }
-  .konkurrence p {
-    text-align: center;
-    font-size: 20px;
-  }
-  /* konkurrence - button*/
-  .btnkonkurrence {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-  }
-  .btn1konkurrence {
-    font-size: 20px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
   /* JOLLY QUIZ - header */
   .headerjollyquiz h1 {
     padding-left: 56%;
     padding-right: 7%;
     top: 18%;
-    font-size: 40px;
+    font-size: 33px;
+  }
+  .headermobil {
+    display: none;
+  }
+  .headercom {
+    display: inline;
   }
   /* JOLLY QUIZ - section 1 */
   .jollyquiz h2 {
@@ -1168,6 +864,7 @@ content: '';
     margin-top: 0px;
   }
 }
+
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   /* fjern burgermenu */
@@ -1201,67 +898,18 @@ content: '';
     margin-top: 10px;
     margin-bottom: 50px;
   }
-  /* header vis mobil eller computer - alle */
-  .headermobil {
-    display: none;
-  }
-  .headercom {
-    display: inline;
-  }
-  /* FORSIDE - header */
-  .hashtag {
-    width: 18%;
-    top: 15%;
-    left: 6%;
-  }
-  .headerforside h1 {
-    top: 21%;
-    left: 26%;
-    font-size: 30px;
-  }
-  .headerforside h2 {
-    top: 50%;
-    left: 7%;
-    font-size: 26px;
-  }
-  /* FORSIDE - konkurrence */
-  .konkurrence img{
-    width: 60%;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .konkurrence h2 {
-    text-align: left;
-    font-size: 30px;
-  }
-  .konkurrence h3 {
-    text-align: left;
-    font-size: 25px;
-  }
-  .konkurrence p {
-    text-align: left;
-    font-size: 20px;
-  }
-  /* konkurrence - button*/
-  .btnkonkurrence {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-  }
-  .btn1konkurrence {
-    font-size: 20px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-
   /* JOLLY QUIZ - header */
   .headerjollyquiz h1 {
     padding-left: 52%;
     padding-right: 0;
     top: 26%;
     font-size: 31px;
+  }
+  .headermobil {
+    display: none;
+  }
+  .headercom {
+    display: inline;
   }
   /* JOLLY QUIZ - section 1 */
   .jollyquiz {
@@ -1345,36 +993,17 @@ content: '';
     width: 27%;
     margin-top: 30px;
   }
-  /* header vis mobil eller computer - alle */
-  .headermobil {
-    display: none;
-  }
-  .headercom {
-    display: inline;
-  }
-  /* FORSIDE - header */
-  .hashtag {
-    width: 18%;
-    top: 15%;
-    left: 6%;
-  }
-  .headerforside h1 {
-    top: 21%;
-    left: 26%;
-    font-size: 40px;
-  }
-  .headerforside h2 {
-    top: 53%;
-    left: 8%;
-    font-size: 34px;
-  }
-  /* FORSIDE - konkurrence */
-
   /* JOLLY QUIZ - header */
   .headerjollyquiz h1 {
     padding-left: 52%;
     top: 26%;
     font-size: 38px;
+  }
+  .headermobil {
+    display: none;
+  }
+  .headercom {
+    display: inline;
   }
   /* JOLLY QUIZ - section 1 */
   .jollyquiz {
@@ -1458,78 +1087,17 @@ content: '';
     width: 27%;
     margin-top: 30px;
   }
-  /* header vis mobil eller computer - alle */
-  .headermobil {
-    display: none;
-  }
-  .headercom {
-    display: inline;
-  }
-  /* FORSIDE - header */
-  .hashtag {
-    width: 18%;
-    top: 15%;
-    left: 6%;
-  }
-  .headerforside h1 {
-    top: 21%;
-    left: 26%;
-    font-size: 45px;
-  }
-  .headerforside h2 {
-    top: 53%;
-    left: 8%;
-    font-size: 38px;
-  }
-  /* FORSIDE - konkurrence */
-  .konkurrence {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    height: 500px;
-  }
-  .konkurrence img{
-    width: 90%;
-    padding: 20px;
-  }
-  .btnkonkurrence {
-    margin: auto;
-  }
-  .konkurrence h2 {
-    text-align: left;
-    margin-left: 10px;
-    margin-right: auto;
-    font-size: 25px;
-    width: 32ch;
-  }
-  .konkurrence h3 {
-    text-align: left;
-    margin-left: 10px;
-    margin-right: auto;
-    font-size: 25px;
-    width: 32ch;
-  }
-  .konkurrence p {
-    text-align: left;
-    margin-left: 10px;
-    margin-right: auto;
-    font-size: 20px;
-    width: 40ch;
-  }
-  /* konkurrence - button*/
-  .btn1konkurrence {
-    font-size: 20px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-left: 10px;
-  }
-
   /* JOLLY QUIZ - header */
   .headerjollyquiz h1 {
     padding-left: 52%;
     top: 26%;
     font-size: 44px;
+  }
+  .headermobil {
+    display: none;
+  }
+  .headercom {
+    display: inline;
   }
   /* JOLLY QUIZ - section 1 */
   .jollyquiz {
@@ -1565,44 +1133,6 @@ content: '';
   .sådangørdu img {
     display: inherit;
   }
-  /* JOLLY QUIZ - vidste du */
-  .vidstedu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row-reverse;
-  }
-  .btnvidstedu {
-    margin: auto;
-  }
-  .vidstedu h2 {
-    text-align: left;
-    margin-left: 10px;
-    margin-right: auto;
-    font-size: 25px;
-    width: 32ch;
-  }
-  .vidstedu h3 {
-    text-align: left;
-    margin-left: 10px;
-    margin-right: auto;
-    font-size: 25px;
-    width: 32ch;
-  }
-  .vidstedu p {
-    text-align: left;
-    margin-left: 10px;
-    margin-right: auto;
-    font-size: 20px;
-    width: 40ch;
-  }
-  /* VIDSTE DU - button*/
-  .btn1vidstedu {
-    font-size: 20px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-left: 10px;
-  }
   /* DIN JOLLY QUIZ - section 1 */
   .dinjollyquiz {
     height: 380px;
@@ -1621,7 +1151,6 @@ content: '';
   }
   /* DIN JOLLY QUIZ - hjernevridder */
   .hjernevrider {
-    align-items: flex-end;
     /*flex-direction: row; */
   }
   .hjernevrider img{
