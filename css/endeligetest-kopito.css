@@ -440,7 +440,7 @@ footer a:hover {
   padding: 30px;
 }
 
-/* 2 HISTORIEN TEST 2 */
+/* 2 HISTORIEN TEST 2  YEEEEEEESSS */
 #cd-timeline {
   position: relative;
   padding: 2em 0;
@@ -454,15 +454,6 @@ footer a:hover {
   background-size: 2px 100%;
   background-repeat: no-repeat;
   background-position: center center;
-  /*#cd-timeline::before
-  content: '';
-  position: absolute;
-  top: 0;
-  height: 100%;
-  width: 2px;
-  background: var(--brown);
-  left: 50%;
-  margin-left: -1px;*/
 }
 .cd-container::after {
   content: '';
@@ -479,19 +470,22 @@ footer a:hover {
 }
 .cd-timeline-block {
   position: relative;
-      margin: 20em 0;
+      margin: 20em 0; /* mellemrum mellemm årstal */
 }
 .cd-timeline-content {
   margin-left: 0;
   padding: 1.6em;
   width: 42%;
   position: relative;
-  background: white;
-  border-radius: 0.25em;
+  /*background: white;*/
+  /*border-radius: 0.25em;*/
   padding: 1em;
-  box-shadow: 0 3px 0 #d7e4ed;
+  /*box-shadow: 0 3px 0 #d7e4ed;*/
 }
-.cd-timeline-content .cd-date {
+.left {
+  text-align: right;
+}
+.cd-timeline-content figure {
   position: absolute;
   width: 100%;
   left: 140%;
@@ -499,18 +493,17 @@ footer a:hover {
   font-size: 16px;
   font-size: 1rem;
 }
-.cd-timeline-content #cd-dateto {
+/*.cd-timeline-content #cd-dateto {
   position: absolute;
   width: 100%;
   right: 140%;
   top: 6px;
   font-size: 16px;
   font-size: 1rem;
-}
+} */
 .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-date {
   left: auto;
-  right: 122%;
-  text-align: right;
+  right: 140%;
 }
 .cd-timeline-block:nth-child(even) .cd-timeline-content {
   float: right;
@@ -520,7 +513,7 @@ footer a:hover {
   display: table;
   clear: both;
 }
-.cd-timeline-img {
+.årstalrød {
   width: 80px;
   height: 80px;
   line-height: 80px;
@@ -537,60 +530,23 @@ footer a:hover {
   font-size: 32px;
   text-align: center;
 }
-
-/*
-.cssanimations .cd-timeline-img.is-hidden,.cssanimations .cd-timeline-content.is-hidden {
-  visibility: hidden;
-}
-.cssanimations .cd-timeline-img.bounce-in,.cssanimations .cd-timeline-content.bounce-in {
-  visibility: visible;
-  animation: cd-bounce-1 0.6s;
-}
-@keyframes cd-bounce-1 {
-  0% {
-    opacity: 0;
-    transform: scale(0.5);
-  }
-  60% {
-    opacity: 1;
-    transform: scale(1.2);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-*/
-.årstalrød {
-  width: 80px;
-  height: 80px;
-  line-height: 80px;
-  border-radius: 50%;
-  color: var(--white);
-  font-family: var(--overskrift2);
-  font-size: 32px;
-  text-align: center;
-  background: var(--red);
-  display: block;
-  position: absolute;
-  left: 112%;
-  z-index: 1;
-}
 .årstalbrun {
   width: 80px;
   height: 80px;
   line-height: 80px;
+  left: 50%;
+  margin-left: -40px;
+  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  top: 0;
   border-radius: 50%;
   color: var(--white);
   font-family: var(--overskrift2);
+  background: var(--brown);
   font-size: 32px;
   text-align: center;
-  background: var(--brown);
-  display: block;
-  position: absolute;
-  left: 112%;
-  z-index: 1;
 }
-
 
 
 

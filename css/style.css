@@ -547,233 +547,103 @@ footer a:hover {
 .historientekst {
   padding: 30px;
 }
-/* HISTORIEN - billede til venstre*/
-.første {
-  display: flex;
-  flex-direction: row;
-  /* gap: 310px; */
-  /* justify-content: space-around; */
-  padding-top: 60px;
-}
-.første p{
-  width: 35ch; /* eller 35% */
-  font-family: var(--brødtekst);
-  color: var(--brown);
-  font-size: 22px;
-  text-align: left;
-  /*padding: 70px;
-  margin-left: 15%; */
-}
-.første img {
-  width: 100%;
-  height:auto;
-}
-
-/* HISTORIEN - billede til højre*/
-.anden {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
-}
-.anden p{
-  width: 35ch;
-  font-family: var(--brødtekst);
-  color: var(--brown);
-  font-size: 22px;
-  text-align: right;
-  margin-left: 26%;
-  margin-top: 20px;
-  /*display: block;
-  position: absolute;
-  left: 50%;
-  margin-left: -2.3rem;
-  z-index: 998;*/
-}
-.anden h3 {
-  width: 35ch;
-  font-family: var(--overskrift2);
-  color: var(--red);
-  font-size: 30px;
-  text-align: right;
-
-  margin-top: 30px;
-}
-.anden img {
-  width: 100%;
-  height:auto;
-}
-
-
-/* PRØVE TO !!! */
-/* HISTORIEN - billede til venstre*/
-.venstre {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  /*gap: 310px;*/
-  /* justify-content: space-around; */
-  padding-top: 60px;
-}
-.venstre p{
-  width: 35ch; /* eller 35% */
-  font-family: var(--brødtekst);
-  color: var(--brown);
-  font-size: 22px;
-  text-align: left;
-  margin-top: 30px;
-  display: block;
-  position: absolute;
-  left: 66%;
-  margin-left: -2.3rem;
-  z-index: 998;
-  /*margin: 70px; /*
-  margin-left: 15%; */
-}
-.venstre img {
-  width: 100%;
-  height:auto;
-}
-
-/* HISTORIEN - billede til højre*/
-.højre {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row-reverse;
-}
-.højre p{
-  width: 35ch;
-  font-family: var(--brødtekst);
-  color: var(--brown);
-  font-size: 22px;
-  text-align: right;
-  margin-left: 26%;
-  margin-top: 20px;
-  /*display: block;
-  position: absolute;
-  left: 50%;
-  margin-left: -2.3rem;
-  z-index: 998;*/
-}
-.højre h3 {
-  width: 35ch;
-  font-family: var(--overskrift2);
-  color: var(--red);
-  font-size: 30px;
-  text-align: right;
-  margin-top: 30px;
-}
-.højre img {
-  width: 35%;
-  height:auto;
-  display: block;
-  position: absolute;
-
-  right: 0;
-  z-index: 998;
-}
-
-
-
 /* HISTORIEN - tidslinje */
-.historien { /*https://stackoverflow.com/questions/1179928/how-can-i-put-a-vertical-line-down-the-center-of-a-div*/
+#historie-tidslinje {
+  position: relative;
+  padding: 2em 0;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+/* vertical line */
+#historie-tidslinje {
   background-image: linear-gradient(#000, #000);
   background-color: var(--white);
   background-size: 2px 100%;
   background-repeat: no-repeat;
   background-position: center center;
 }
-.årstalrød { /*https://stackoverflow.com/questions/16615403/how-to-draw-a-circle-with-text-in-the-middle */
+.historie-container::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.historie-container {
+  width: 90%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.begivenhed:first-child {
+  margin-top: 0;
+}
+.begivenhed {
+  position: relative;
+      margin: 20em 0; /* mellemrum mellemm årstal */
+}
+.historie-indhold {
+  margin-left: 0;
+  padding: 1.6em;
+  width: 42%;
+  position: relative;
+  padding: 1em;
+}
+.tekstleft {
+  text-align: right;
+}
+.historie-indhold figure {
+  position: absolute;
+  width: 100%;
+  left: 140%;
+  top: 6px;
+  font-size: 16px;
+  font-size: 1rem;
+}
+.begivenhed:nth-child(even) .historie-indhold figure {
+  left: auto;
+  right: 140%;
+}
+.begivenhed:nth-child(even) .historie-indhold {
+  float: right;
+}
+.begivenhed:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* rød rund cirkel med årstal */
+.årstalrød {
   width: 80px;
   height: 80px;
   line-height: 80px;
+  left: 50%;
+  margin-left: -40px;
+  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  top: 0;
   border-radius: 50%;
   color: var(--white);
   font-family: var(--overskrift2);
+  background: var(--red);
   font-size: 32px;
   text-align: center;
-  background: var(--red);
-
-  display: block;
-  position: absolute;
-  left: 50%;
-  margin-left: -2.3rem;
-  z-index: 998;
 }
-
+/* brun rund cirkel med årstal */
 .årstalbrun {
   width: 80px;
   height: 80px;
   line-height: 80px;
+  left: 50%;
+  margin-left: -40px;
+  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  top: 0;
   border-radius: 50%;
   color: var(--white);
   font-family: var(--overskrift2);
+  background: var(--brown);
   font-size: 32px;
   text-align: center;
-  background: var(--brown);
-
-  display: block;
-  position: absolute;
-  left: 50%;
-  margin-left: -2.3rem;
-  z-index: 998;
-}
-
-/*.line:after {
-  content: '';
-      width: 0;
-      height: 100%;
-      position: absolute;
-      border: solid #979797;
-      border-width: 0 0 0 0.125rem;
-      top: 0;
-      left: 50%;
-      margin-left: -0.0625rem;
-      z-index: 997;
-}
-
-/*.historien div {
-    margin: 10px auto;
-    width: 60%;
-    height: 100px;
-    position:relative;
-    text-align:center
-}
-
-/*.vl {
-  border-left: 6px solid green;
-  height: 500px;
-} */
-/*.historien {
-  background-image: var(--line);
-  background-size: auto 100%;
-  background: no-repeat;
-  background-position:center;
-} */
-
-/*.årstal {
-  content: '';
-    width: 3.125rem;
-    height: 3.125rem;
-    display: block;
-    background: no-repeat 0 0 url(https://static.coke.com/assets/nextgen/bottle.png);
-    background-size: 3.125rem 3.125rem;
-    position: absolute;
-    left: 50%;
-    margin-left: -1.5625rem;
-    z-index: 998;
-} */
-
-/* line {
-content: '';
-    width: 0;
-    height: 100%;
-    position: absolute;
-    border: solid #979797;
-    border-width: 0 0 0 0.125rem;
-    top: 0;
-    left: 50%;
-    margin-left: -0.0625rem;
-    z-index: 997;
 }
 
 /* Extra small devices (phones, 600px and down) */
