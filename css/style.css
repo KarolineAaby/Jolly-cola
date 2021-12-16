@@ -542,7 +542,11 @@ footer a:hover {
   text-align: center;
   font-family: var(--overskrift1);
   color: var(--brown);
-  font-size: 30px;
+}
+.historientekst h3 {
+  text-align: center;
+  color: var(--brown);
+  font-family: var(--overskrift2);
 }
 .historientekst {
   padding: 30px;
@@ -846,6 +850,20 @@ footer a:hover {
     margin-top: 10px;
     margin-bottom: 10px;
   }
+  /* HISTORIEN - overskrift */
+  .historientekst h2 {
+    font-size: 32px;
+    width: 12ch;
+    margin: auto;
+  }
+  .historientekst h3 {
+    font-size: 23px;
+    padding-top: 8px;
+  }
+  .historientekst {
+    padding: 10px;
+    margin-top: 20px;
+  }
   /* HISTORIEN - tidslinje */
   .historie-container {
     width: 85%;
@@ -1036,6 +1054,70 @@ footer a:hover {
     width: 70%;
     margin-top: 0px;
   }
+  /* HISTORIEN - overskrift */
+  .historientekst h2 {
+    font-size: 36px;
+  }
+  .historientekst h3 {
+    font-size: 28px;
+    padding-top: 8px;
+  }
+  .historientekst {
+    padding: 40px;
+  }
+  /* HISTORIEN - tidslinje */
+  .historie-container::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+  .historie-container {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+  .begivenhed:first-child {
+    margin-top: 0;
+  }
+  .begivenhed {
+    position: relative;
+        margin: 7em 0; /* mellemrum mellemm årstal */
+  }
+  .historie-indhold {
+    margin-left: 0;
+    padding: 1.6em;
+    width: 42%;
+    position: relative;
+    padding: 1em;
+  }
+  .historie-indhold p {
+    font-size: 25px;
+  }
+  .historie-indhold h2 {
+    font-size: 30px;
+    padding-bottom: 8px;
+  }
+  .tekstleft {
+    text-align: right;
+  }
+  .historie-indhold figure {
+    position: absolute;
+    width: 100%;
+    left: 140%;
+    top: 6px;
+  }
+  .begivenhed:nth-child(even) .historie-indhold figure {
+    left: auto;
+    right: 140%;
+  }
+  .begivenhed:nth-child(even) .historie-indhold {
+    float: right;
+  }
+  .begivenhed:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
@@ -1182,6 +1264,70 @@ footer a:hover {
     margin-top: 0px;
     margin-bottom: 90px;
   }
+  /* HISTORIEN - overskrift */
+  .historientekst h2 {
+    font-size: 36px;
+  }
+  .historientekst h3 {
+    font-size: 28px;
+    padding-top: 8px;
+  }
+  .historientekst {
+    padding: 40px;
+  }
+  /* HISTORIEN - tidslinje */
+  .historie-container::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+  .historie-container {
+    width: 90%;
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+  .begivenhed:first-child {
+    margin-top: 0;
+  }
+  .begivenhed {
+    position: relative;
+        margin: 10em 0; /* mellemrum mellemm årstal */
+  }
+  .historie-indhold {
+    margin-left: 0;
+    padding: 1.6em;
+    width: 42%;
+    position: relative;
+    padding: 1em;
+  }
+  .historie-indhold p {
+    font-size: 25px;
+  }
+  .historie-indhold h2 {
+    font-size: 30px;
+    padding-bottom: 8px;
+  }
+  .tekstleft {
+    text-align: right;
+  }
+  .historie-indhold figure {
+    position: absolute;
+    width: 100%;
+    left: 140%;
+    top: 6px;
+  }
+  .begivenhed:nth-child(even) .historie-indhold figure {
+    left: auto;
+    right: 140%;
+  }
+  .begivenhed:nth-child(even) .historie-indhold {
+    float: right;
+  }
+  .begivenhed:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -1294,6 +1440,70 @@ footer a:hover {
     width: 30%;
     margin-top: 0px;
     margin-bottom: 110px;
+  }
+  /* HISTORIEN - overskrift */
+  .historientekst h2 {
+    font-size: 36px;
+  }
+  .historientekst h3 {
+    font-size: 28px;
+    padding-top: 8px;
+  }
+  .historientekst {
+    padding: 40px;
+  }
+  /* HISTORIEN - tidslinje */
+  .historie-container::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+  .historie-container {
+    width: 90%;
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+  .begivenhed:first-child {
+    margin-top: 0;
+  }
+  .begivenhed {
+    position: relative;
+        margin: 15em 0; /* mellemrum mellemm årstal */
+  }
+  .historie-indhold {
+    margin-left: 0;
+    padding: 1.6em;
+    width: 42%;
+    position: relative;
+    padding: 1em;
+  }
+  .historie-indhold p {
+    font-size: 25px;
+  }
+  .historie-indhold h2 {
+    font-size: 30px;
+    padding-bottom: 8px;
+  }
+  .tekstleft {
+    text-align: right;
+  }
+  .historie-indhold figure {
+    position: absolute;
+    width: 100%;
+    left: 140%;
+    top: 6px;
+  }
+  .begivenhed:nth-child(even) .historie-indhold figure {
+    left: auto;
+    right: 140%;
+  }
+  .begivenhed:nth-child(even) .historie-indhold {
+    float: right;
+  }
+  .begivenhed:after {
+    content: "";
+    display: table;
+    clear: both;
   }
 }
 
@@ -1534,29 +1744,16 @@ footer a:hover {
   }
   /* HISTORIEN - overskrift */
   .historientekst h2 {
-    text-align: center;
-    font-family: var(--overskrift1);
-    color: var(--brown);
-    font-size: 30px;
+    font-size: 36px;
+  }
+  .historientekst h3 {
+    font-size: 28px;
+    padding-top: 8px;
   }
   .historientekst {
-    padding: 30px;
+    padding: 40px;
   }
   /* HISTORIEN - tidslinje */
-  #historie-tidslinje {
-    position: relative;
-    padding: 2em 0;
-    margin-top: 2em;
-    margin-bottom: 2em;
-  }
-  /* vertical line */
-  #historie-tidslinje {
-    background-image: linear-gradient(#000, #000);
-    background-color: var(--white);
-    background-size: 2px 100%;
-    background-repeat: no-repeat;
-    background-position: center center;
-  }
   .historie-container::after {
     content: '';
     display: table;
@@ -1583,11 +1780,9 @@ footer a:hover {
   }
   .historie-indhold p {
     font-size: 22px;
-    color: var(--black);
   }
   .historie-indhold h2 {
     font-size: 28px;
-    color: var(--red);
     padding-bottom: 8px;
   }
   .tekstleft {
@@ -1598,8 +1793,6 @@ footer a:hover {
     width: 100%;
     left: 140%;
     top: 6px;
-    font-size: 16px;
-    font-size: 1rem;
   }
   .begivenhed:nth-child(even) .historie-indhold figure {
     left: auto;
@@ -1612,41 +1805,5 @@ footer a:hover {
     content: "";
     display: table;
     clear: both;
-  }
-  /* rød rund cirkel med årstal */
-  .årstalrød {
-    width: 80px;
-    height: 80px;
-    line-height: 80px;
-    left: 50%;
-    margin-left: -40px;
-    -webkit-transform: translateZ(0);
-    -webkit-backface-visibility: hidden;
-    position: absolute;
-    top: 0;
-    border-radius: 50%;
-    color: var(--white);
-    font-family: var(--overskrift2);
-    background: var(--red);
-    font-size: 32px;
-    text-align: center;
-  }
-  /* brun rund cirkel med årstal */
-  .årstalbrun {
-    width: 80px;
-    height: 80px;
-    line-height: 80px;
-    left: 50%;
-    margin-left: -40px;
-    -webkit-transform: translateZ(0);
-    -webkit-backface-visibility: hidden;
-    position: absolute;
-    top: 0;
-    border-radius: 50%;
-    color: var(--white);
-    font-family: var(--overskrift2);
-    background: var(--brown);
-    font-size: 32px;
-    text-align: center;
   }
 }
