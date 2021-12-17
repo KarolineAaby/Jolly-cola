@@ -536,7 +536,16 @@ footer a:hover {
   gap: 10px;
   justify-content: space-around;
 }
-
+/* HISTORIEN - header */
+.headerhistorien {
+  background-color: var(--white);
+}
+.headerhistorien h1 {
+  position: absolute;
+  font-family: var(--overskrift1);
+  color: var(--orange);
+  text-align: left;
+}
 /* HISTORIEN - overskrift */
 .historientekst h2 {
   text-align: center;
@@ -850,6 +859,13 @@ footer a:hover {
     margin-top: 10px;
     margin-bottom: 10px;
   }
+  /* HISTORIEN - header */
+  .headerhistorien h1 {
+    padding-left: 56%;
+    padding-right: 0%;
+    top: 32%;
+    font-size: 34px;
+  }
   /* HISTORIEN - overskrift */
   .historientekst h2 {
     font-size: 32px;
@@ -1053,6 +1069,13 @@ footer a:hover {
   .dinjollyquiz img{
     width: 70%;
     margin-top: 0px;
+  }
+  /* HISTORIEN - header */
+  .headerhistorien h1 {
+    padding-left: 55%;
+    padding-right: 7%;
+    top: 13%;
+    font-size: 28px;
   }
   /* HISTORIEN - overskrift */
   .historientekst h2 {
@@ -1264,6 +1287,13 @@ footer a:hover {
     margin-top: 0px;
     margin-bottom: 90px;
   }
+  /* HISTORIEN - header */
+  .headerhistorien h1 {
+    padding-left: 59%;
+    padding-right: 0;
+    top: 14%;
+    font-size: 26px;
+  }
   /* HISTORIEN - overskrift */
   .historientekst h2 {
     font-size: 36px;
@@ -1440,6 +1470,12 @@ footer a:hover {
     width: 30%;
     margin-top: 0px;
     margin-bottom: 110px;
+  }
+  /* HISTORIEN - header */
+  .headerhistorien h1 {
+    padding-left: 61%;
+    top: 17%;
+    font-size: 30px;
   }
   /* HISTORIEN - overskrift */
   .historientekst h2 {
@@ -1741,6 +1777,12 @@ footer a:hover {
     margin-top: 0px;
     margin-bottom: 0px;
     margin-left: 10px;
+  }
+  /* HISTORIEN - header */
+  .headerhistorien h1 {
+    padding-left: 61%;
+    top: 14%;
+    font-size: 40px;
   }
   /* HISTORIEN - overskrift */
   .historientekst h2 {
