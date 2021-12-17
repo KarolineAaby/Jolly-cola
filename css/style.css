@@ -353,6 +353,99 @@ footer a:hover {
 .btnhistorieforside:hover, .btnhistorieforside:active {
   background-color: var(--orange);
 }
+/* FORSIDE - scan din jolly quiz */
+.jollyquizforside {
+  background-color: var(--yellow);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+.jollyquizforside img{
+  width: 79%;
+}
+.jollyquizforside h2 {
+  font-family: var(--overskrift1);
+  color: var(--brown);
+  font-size: 36px;
+}
+.jollyquizforside p {
+  font-family: var(--brødtekst);
+  color: var(--brown);
+  width: 40ch;
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+/* FORSIDE - scan din jolly quiz - button */
+.jollyquizforside a {
+  font-family: var(--overskrift2);
+  font-size: 20px;
+}
+.jollyquizforside a:link, .jollyquizforside a:visited {
+  background-color: var(--brown);
+  color: var(--white);
+  padding: 14px 50px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: 0px 0px 5px var(--brown);
+}
+.jollyquizforside a:hover, .jollyquizforside a:active {
+  background-color: var(--darkred);
+} */
+
+/*.jollyquizforside {
+  background-color: var(--yellow);
+  padding-top: 40px;
+  margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-around;
+}
+.jollyquizforside img{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  margin-top: 10%;
+  margin-bottom: -4px;
+}
+.jollyquizforside h2 {
+  font-family: var(--overskrift1);
+  color: var(--brown);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.jollyquizforside p {
+  font-family: var(--brødtekst);
+  color: var(--brown);
+  width: 23ch;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+*/
+/* FORSIDE - scan din jolly quiz - button */
+/*.btnjollyquizforside {
+  font-family: var(--overskrift2);
+}
+.btnjollyquizforside:link, .btnjollyquizforside:visited {
+  background-color: var(--brown);
+  color: var(--white);
+  padding: 14px 50px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: 0px 0px 5px var(--brown);
+}
+.btnjollyquizforside:hover, .btnjollyquizforside:active {
+  background-color: var(--darkred);
+} */
 
 /* JOLLY QUIZ - header */
 .headerjollyquiz {
@@ -751,7 +844,7 @@ footer a:hover {
     text-align: center;
     font-size: 20px;
   }
-  /* konkurrence - button*/
+  /* FORSIDE - konkurrence - button*/
   .btnkonkurrence {
     display: flex;
     flex-wrap: wrap;
@@ -761,6 +854,41 @@ footer a:hover {
     font-size: 20px;
     margin-top: 10px;
     margin-bottom: 10px;
+  }
+  /* FORSIDE - scan din jolly quiz */
+  .jollyquizforside {
+
+  }
+  .jollyquizforside img{
+    width: 80%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .jollyquizforside h2 {
+    font-size: 36px;
+    width: 10ch;
+    text-align: center;
+    margin: auto;
+  }
+  .jollyquizforside p {
+    width: 25ch;
+    font-size: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  .jollyquizforside article {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  /* FORSIDE - scan din jolly quiz - button */
+  .jollyquizforside a {
+    font-size: 20px;
+  }
+  .jollyquizforside a:link, .jollyquizforside a:visited {
+    padding: 14px 50px;
   }
   /* JOLLY QUIZ - header */
   .headerjollyquiz h1 {
@@ -1044,6 +1172,12 @@ footer a:hover {
     flex-direction: column;
   }
   .btn1konkurrence {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .btnjollyquizforside {
     font-size: 20px;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -1672,13 +1806,45 @@ footer a:hover {
     font-size: 20px;
     width: 40ch;
   }
-  /* konkurrence - button*/
-  .btn1konkurrence {
+  /* FORSIDE konkurrence - button*/
+  /*.btn1konkurrence {
     font-size: 20px;
     margin-top: 0px;
     margin-bottom: 0px;
     margin-left: 10px;
+  }*/
+  /* FORSIDE - jolly quiz*/
+  /*.jollyquizforside {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
   }
+  .contentjollyquizforside {
+    margin: auto;
+  }
+  .jollyquizforside img {
+    width: 80%;
+  }
+  .jollyquizforside h2 {
+    text-align: left;
+    margin-left: 10px;
+    margin-right: auto;
+  }
+  .jollyquizforside p {
+    text-align: left;
+    margin-left: 10px;
+    margin-right: auto;
+    font-size: 25px;
+    width: 35ch;
+  }*/
+  /* forside jolly quiz - button*/
+  /*.btnjollyquizforside {
+    font-size: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+  }*/
 
   /* JOLLY QUIZ - header */
   .headerjollyquiz h1 {
