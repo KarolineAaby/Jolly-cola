@@ -165,6 +165,28 @@ font-family: var(--overskrift1);
 .navburger {
   padding: 20px;
 }
+/* Dropdown Content (Hidden by Default) */
+.dropdown-contentmobil {
+  display: none;
+  background-color: var(--white);
+  min-width: 160px;
+  margin-top: 16px;
+}
+/* Links inside the dropdown */
+.dropdown-contentmobil a {
+  color: var(--darkred);
+  text-decoration: none;
+  display: block;
+  font-family: var(--overskrift1);
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+/* Show the dropdown menu on hover */
+.navburger:hover .dropdown-contentmobil {
+  display: block;
+}
+
 /* header */
 header {
   position: relative;
