@@ -318,40 +318,14 @@ footer a:hover {
   background-color: var(--orange);
 }
 /* FORSIDE - historien */
-/* historien - button */
-.btnhistorieforside {
+.historienforsidecom h2 {
+  position: absolute;
+  color: var(--brown);
   font-family: var(--overskrift1);
-  border-radius: 50%;
-  width: 200px;
-  height: 200px;
-  line-height: 40px;
-  font-size: 25px;
-  box-shadow: 0px 0px 5px var(--brown);
-  position: absolute;
-  top: 122%;
-  left: 44%;
-  /*margin-left: -40px;
-  -webkit-transform: translateZ(0);
-  -webkit-backface-visibility: hidden;
-  position: absolute;
-  top: 0;
-  border-radius: 50%;
-  color: var(--white);
-  font-family: var(--overskrift2);
-  background: var(--red);
-  font-size: 32px;
-  text-align: center;*/
 }
-.btnhistorieforside:link, .btnhistorieforside:visited {
-  background-color: var(--brown);
-  color: var(--white);
-  padding: 20px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-}
-.btnhistorieforside:hover, .btnhistorieforside:active {
-  background-color: var(--orange);
+.historienforsidecom h3 {
+  position: absolute;
+  color: var(--orange);
 }
 /* FORSIDE - scan din jolly quiz */
 .jollyquizforside {
@@ -395,61 +369,10 @@ footer a:hover {
 }
 .jollyquizforside a:hover, .jollyquizforside a:active {
   background-color: var(--darkred);
-} */
-
-/*.jollyquizforside {
-  background-color: var(--yellow);
-  padding-top: 40px;
-  margin-top: 60px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  justify-content: space-around;
 }
-.jollyquizforside img{
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: auto;
-  margin-top: 10%;
-  margin-bottom: -4px;
-}
-.jollyquizforside h2 {
-  font-family: var(--overskrift1);
-  color: var(--brown);
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-.jollyquizforside p {
-  font-family: var(--brødtekst);
-  color: var(--brown);
-  width: 23ch;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-*/
-/* FORSIDE - scan din jolly quiz - button */
-/*.btnjollyquizforside {
-  font-family: var(--overskrift2);
-}
-.btnjollyquizforside:link, .btnjollyquizforside:visited {
-  background-color: var(--brown);
-  color: var(--white);
-  padding: 14px 50px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  box-shadow: 0px 0px 5px var(--brown);
-}
-.btnjollyquizforside:hover, .btnjollyquizforside:active {
-  background-color: var(--darkred);
-} */
-
 /* JOLLY QUIZ - header */
 .headerjollyquiz {
-  background-color: var(--darkred)
+  background-color: var(--darkred);
 }
 .headerjollyquiz h1 {
   position: absolute;
@@ -856,9 +779,6 @@ footer a:hover {
     margin-bottom: 10px;
   }
   /* FORSIDE - scan din jolly quiz */
-  .jollyquizforside {
-
-  }
   .jollyquizforside img{
     width: 80%;
     height: auto;
@@ -1176,7 +1096,18 @@ footer a:hover {
     margin-top: 10px;
     margin-bottom: 10px;
   }
+  /* FORSIDE - historien */
+  .historienforsidecom h2 {
+    top: 170%;
+    left: 26%;
+    z-index: 1;
+  }
+  .historienforsidecom h3 {
+    top: 160%;
+    left: 26%;
+  }
 
+  /* FORSIDE - scan din jolly quiz */
   .btnjollyquizforside {
     font-size: 20px;
     margin-top: 10px;
