@@ -145,7 +145,6 @@ font-family: var(--overskrift1);
  nav a {
   color: var(--white);
   text-decoration: none;
-  /* font-size: 150%; */
 }
 /* BURGERMENU - MENUBAR */
 #navigationburger {
@@ -220,7 +219,6 @@ footer a:hover {
   color: var(--brown);
 }
 .footer {
-  /*text-align: center; */
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
@@ -228,7 +226,6 @@ footer a:hover {
   padding: 70px;
   padding-top: 90px;
   padding-bottom: 60px;
-  /* flex-direction: column; */
 }
 .footer img{
   width: 27%;
@@ -534,17 +531,10 @@ footer a:hover {
 }
 /* DIN JOLLY QUIZ - buttons*/
 .btnhjernevrider {
-  /*display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  flex-direction: column; /* PLACER I MIDTE - aflang */
 }
 /* DIN JOLLY QUIZ - button download */
 .btn1hjernevrider {
   font-family: var(--overskrift2);
-  /* display: block;
-  margin-left: 50px;
-  margin-right: 50px; */ /* PLACER I MIDTE */
 }
 .btn1hjernevrider:link, .btn1hjernevrider:visited {
   background-color: var(--brown);
@@ -664,7 +654,6 @@ footer a:hover {
   text-align: center;
 }
 /* JOLLY MOMENT - header */
-/* FORSIDE - header */
 .headerjollymoment {
   background-color: var(--darkred)
 }
@@ -971,7 +960,6 @@ footer a:hover {
   .btnvidstedu {
     display: flex;
     flex-wrap: wrap;
-    /* gap: 10px;*/
     flex-direction: column; /* PLACER I MIDTE / column */
   }
   .btn1vidstedu {
@@ -1007,16 +995,10 @@ footer a:hover {
   }
   .hjernevrider h3 {
     text-align: center;
-  /*  display: block;
-    margin-left: auto;
-    margin-right: auto;*/
     font-size: 25px;
   }
   .hjernevrider p {
     text-align: center;
-  /*  display: block;
-    margin-left: auto;
-    margin-right: auto;*/
     font-size: 20px;
   }
   .hjernevrider p a {
@@ -1110,7 +1092,6 @@ footer a:hover {
     background-color: var(--white);
   }
   /* JOLLY MOMENT - header */
-  /* FORSIDE - header */
   .hashtagjollymoment {
     width: 20%;
     top: 23%;
@@ -2076,7 +2057,6 @@ footer a:hover {
   /* DIN JOLLY QUIZ - hjernevridder */
   .hjernevrider {
     align-items: flex-end;
-    /*flex-direction: row; */
   }
   .hjernevrider img{
     width: 48%;
@@ -2084,8 +2064,6 @@ footer a:hover {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    /* margin-top: 40px;
-    margin-bottom: 15px; */
   }
   .hjernevrider h3 {
     text-align: left;
