@@ -137,7 +137,7 @@ img {
 
 .navigationsearch {
 text-decoration: none;
-color: var(--brown);
+color: var(--white);
 font-family: var(--overskrift1);
 }
 
@@ -267,45 +267,40 @@ footer a:hover {
 /* FORSIDE - konkurrence */
 .konkurrence {
   background-color: var(--darkred);
-  width: 100%;
-  height: 560px;
   display: flex;
   flex-wrap: wrap;
-  gap: 5px;
-  justify-content: space-around;
+  gap: 10px;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 40px;
 }
 .konkurrence img{
-  width: 100%;
-  height: auto;
+  width: 79%;
 }
 .konkurrence h2 {
   font-family: var(--overskrift1);
   color: var(--white);
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  font-size: 36px;
 }
 .konkurrence h3 {
   font-family: var(--overskrift2);
   color: var(--white);
-  width: 23ch;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  font-size: 36px;
 }
 .konkurrence p {
   font-family: var(--brødtekst);
   color: var(--white);
-  width: 30ch;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  width: 40ch;
+  font-size: 20px;
+  margin-bottom: 40px;
 }
 /* konkurrence - button */
-.btn1konkurrence {
+.konkurrence a {
   font-family: var(--overskrift2);
+  font-size: 20px;
 }
-.btn1konkurrence:link, .btn1konkurrence:visited {
+.konkurrence a:link, .konkurrence a:visited {
   background-color: var(--brown);
   color: var(--white);
   padding: 14px 50px;
@@ -314,18 +309,12 @@ footer a:hover {
   display: inline-block;
   box-shadow: 0px 0px 5px var(--brown);
 }
-.btn1konkurrence:hover, .btn1konkurrence:active {
+.konkurrence a:hover, .konkurrence a:active {
   background-color: var(--orange);
 }
 /* FORSIDE - historien */
-.historienforsidecom h2 {
-  position: absolute;
-  color: var(--brown);
-  font-family: var(--overskrift1);
-}
-.historienforsidecom h3 {
-  position: absolute;
-  color: var(--orange);
+.historienforside {
+  background-color: var(--yellow);
 }
 /* FORSIDE - scan din jolly quiz */
 .jollyquizforside {
@@ -674,6 +663,92 @@ footer a:hover {
   font-size: 32px;
   text-align: center;
 }
+/* JOLLY MOMENT - header */
+/* FORSIDE - header */
+.headerjollymoment {
+  background-color: var(--darkred)
+}
+.hashtagjollymoment {
+  position: absolute;
+}
+.headerjollymoment h1 {
+  position: absolute;
+  font-family: var(--overskrift1);
+  color: var(--brown);
+  text-align: left;
+}
+.headerjollymoment h2 {
+  position: absolute;
+  font-family: var(--overskrift1);
+  color: var(--brown);
+  text-align: left;
+  text-shadow: #d9d3cc 3px 3px 2px;
+}
+/* JOLLY MOMENT - instagram */
+.jollymoment {
+  background-color: var(--darkred);
+}
+.jollymoment h2{
+  margin-top: 0;
+  color: var(--white);
+  text-align: center;
+  padding-top: 30px;
+}
+.jollymoment p {
+  color: var(--white);
+  text-align: center;
+  width: 40%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.jollymoment a {
+  text-align: center;
+  text-decoration: none;
+  font-family: var(--brødtekst);
+  color: var(--white);
+  margin-top: var(--whitespace);
+  padding-bottom: 25px;
+}
+.jollymoment a:hover a:active {
+  color: var(--brown);
+}
+.jollymomentinstagram {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+.jollymomentinstagram img{
+  width: 23%;
+}
+/* JOLLY MOMENT - konkurrencebetingelser */
+.konkurrencebetingelser h2 {
+  color: var(--brown);
+  font-family: var(--overskrift1);
+  font-size: 32px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.konkurrencebetingelser p {
+  color: var(--brown);
+  font-family: var(--brødtekst);
+  font-size: 18px;
+}
+.konkurrencebetingelser {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.column {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 80px;
+  justify-content: center;
+  padding-bottom: 60px;
+}
+.column p{
+  width: 40%;
+}
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -749,34 +824,50 @@ footer a:hover {
   }
   /* FORSIDE - konkurrence */
   .konkurrence img{
-    width: 85%;
+    width: 80%;
     height: auto;
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
   .konkurrence h2 {
+    font-size: 36px; /*eller 30*/
+    width: 15ch;
     text-align: center;
-    font-size: 30px;
+    margin: auto;
+    margin-top: 10px;
   }
   .konkurrence h3 {
+    font-size: 30px; /*eller 30*/
+    width: 15ch;
     text-align: center;
-    font-size: 25px;
+    margin: auto;
   }
   .konkurrence p {
-    text-align: center;
+    width: 25ch;
     font-size: 20px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
-  /* FORSIDE - konkurrence - button*/
-  .btnkonkurrence {
+  .konkurrence article {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
     flex-direction: column;
   }
-  .btn1konkurrence {
+  /* FORSIDE - konkurrence - button*/
+  .konkurrence a {
     font-size: 20px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    width: 75%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .konkurrence a:link, .konkurrence a:visited {
+    padding: 14px 50px;
   }
   /* FORSIDE - scan din jolly quiz */
   .jollyquizforside img{
@@ -887,8 +978,11 @@ footer a:hover {
     font-size: 20px;
     margin-top: 10px;
     margin-bottom: 10px;
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
-
   /* DIN JOLLY QUIZ - section 1 */
   .dinjollyquiz {
     height: 300px;
@@ -940,12 +1034,20 @@ footer a:hover {
     font-size: 20px;
     margin-top: 10px;
     margin-bottom: 10px;
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
   /* DIN JOLLY QUIZ - button se løsningen */
   .btn2hjernevrider {
     font-size: 20px;
     margin-top: 10px;
     margin-bottom: 10px;
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
   /* HISTORIEN - header */
   .headerhistorien h1 {
@@ -1006,6 +1108,58 @@ footer a:hover {
   }
   .historie-indhold div {
     background-color: var(--white);
+  }
+  /* JOLLY MOMENT - header */
+  /* FORSIDE - header */
+  .hashtagjollymoment {
+    width: 20%;
+    top: 23%;
+    left: 20%;
+    margin: auto;
+  }
+  .headerjollymoment h1 {
+    top: 5%;
+    left: 20%;
+    font-size: 28px;
+  }
+  .headerjollymoment h2 {
+    top: 24%;
+    left: 44%;
+    font-size: 19px;
+  }
+  /* JOLLY MOMENT - instagram */
+  .jollymomentinstagram img{
+    width: 45%;
+  }
+  .jollymoment h2{
+    font-size: 32px;
+  }
+  .jollymoment p {
+    width: 80%;
+    font-size: 20px;
+  }
+  .jollymoment a {
+    font-size: 20px;
+  }
+  /* JOLLY MOMENT - konkurrencebetingelser */
+  .konkurrencebetingelser h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  .konkurrencebetingelser p {
+    font-size: 18px;
+    text-align: center;
+  }
+  .konkurrencebetingelser {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .column {
+    gap: 10px;
+    padding-bottom: 50px;
+  }
+  .column p{
+    width: 90%;
   }
 }
 
@@ -1085,33 +1239,40 @@ footer a:hover {
     text-align: center;
     font-size: 20px;
   }
-  /* konkurrence - button*/
-  .btnkonkurrence {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-  }
-  .btn1konkurrence {
+  /* FORSIDE - konkurrence - button*/
+  .konkurrence a {
     font-size: 20px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    width: 70%;
+    margin-left: 15%;
   }
-  /* FORSIDE - historien */
-  .historienforsidecom h2 {
-    top: 170%;
-    left: 26%;
-    z-index: 1;
+  .konkurrence a:link, .konkurrence a:visited {
+    padding: 14px 50px;
   }
-  .historienforsidecom h3 {
-    top: 160%;
-    left: 26%;
-  }
-
   /* FORSIDE - scan din jolly quiz */
-  .btnjollyquizforside {
+  .jollyquizforside img{
+    width: 60%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .jollyquizforside h2 {
+    text-align: center;
+    font-size: 30px;
+  }
+  .jollyquizforside p {
+    text-align: center;
     font-size: 20px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    width: 35ch;
+  }
+  /* FORSIDE - scan din jolly quiz - button */
+  .jollyquizforside a {
+    font-size: 20px;
+    width: 70%;
+    margin-left: 15%;
+  }
+  .jollyquizforside a:link, .konkurrence a:visited {
+    padding: 14px 50px;
   }
   /* JOLLY QUIZ - header */
   .headerjollyquiz h1 {
@@ -1246,6 +1407,22 @@ footer a:hover {
     display: table;
     clear: both;
   }
+  /* JOLLY MOMENT - header */
+  .hashtagjollymoment {
+    width: 15%;
+    top: 50%;
+    left: 8%;
+  }
+  .headerjollymoment h1 {
+    top: 17%;
+    left: 8%;
+    font-size: 30px;
+  }
+  .headerjollymoment h2 {
+    top: 53%;
+    left: 25%;
+    font-size: 22px;
+  }
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
@@ -1307,34 +1484,52 @@ footer a:hover {
   .konkurrence img{
     width: 60%;
     height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
   }
   .konkurrence h2 {
     text-align: left;
-    font-size: 30px;
+    font-size: 28px;
   }
   .konkurrence h3 {
     text-align: left;
-    font-size: 25px;
+    font-size: 24px;
   }
   .konkurrence p {
     text-align: left;
+    font-size: 18px;
+    width: 32ch;
+  }
+  /* FORSIDE - konkurrence - button*/
+  .konkurrence a {
     font-size: 20px;
+    margin-left: 0;
   }
-  /* konkurrence - button*/
-  .btnkonkurrence {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+  .konkurrence a:link, .konkurrence a:visited {
+    padding: 14px 50px;
   }
-  .btn1konkurrence {
+  /* FORSIDE - scan din jolly quiz */
+  .jollyquizforside img{
+    width: 60%;
+    height: auto;
+  }
+  .jollyquizforside h2 {
+    text-align: left;
+    font-size: 28px;
+    margin-left: 30px;
+  }
+  .jollyquizforside p {
+    text-align: left;
+    font-size: 18px;
+    width: 28ch;
+    margin-left: 30px;
+  }
+  /* FORSIDE - scan din jolly quiz - button */
+  .jollyquizforside a {
     font-size: 20px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-left: 30px;
   }
-
+  .jollyquizforside a:link, .konkurrence a:visited {
+    padding: 14px 50px;
+  }
   /* JOLLY QUIZ - header */
   .headerjollyquiz h1 {
     padding-left: 52%;
@@ -1463,6 +1658,22 @@ footer a:hover {
     display: table;
     clear: both;
   }
+  /* JOLLY MOMENT - header */
+  .hashtagjollymoment {
+    width: 13%;
+    top: 47%;
+    left: 13%;
+  }
+  .headerjollymoment h1 {
+    top: 18%;
+    left: 13%;
+    font-size: 31px;
+  }
+  .headerjollymoment h2 {
+    top: 50%;
+    left: 28%;
+    font-size: 22px;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -1518,8 +1729,6 @@ footer a:hover {
     left: 8%;
     font-size: 34px;
   }
-  /* FORSIDE - konkurrence */
-
   /* JOLLY QUIZ - header */
   .headerjollyquiz h1 {
     padding-left: 52%;
@@ -1646,6 +1855,22 @@ footer a:hover {
     display: table;
     clear: both;
   }
+  /* JOLLY MOMENT - header */
+  .hashtagjollymoment {
+    width: 13%;
+    top: 47%;
+    left: 14%;
+  }
+  .headerjollymoment h1 {
+    top: 19%;
+    left: 15%;
+    font-size: 36px;
+  }
+  .headerjollymoment h2 {
+    top: 50%;
+    left: 29%;
+    font-size: 25px;
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -1702,81 +1927,58 @@ footer a:hover {
     font-size: 38px;
   }
   /* FORSIDE - konkurrence */
-  .konkurrence {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    height: 500px;
-  }
   .konkurrence img{
     width: 90%;
     padding: 20px;
   }
-  .btnkonkurrence {
-    margin: auto;
-  }
   .konkurrence h2 {
     text-align: left;
-    margin-left: 10px;
-    margin-right: auto;
-    font-size: 25px;
-    width: 32ch;
+    font-size: 40px;
   }
   .konkurrence h3 {
     text-align: left;
-    margin-left: 10px;
-    margin-right: auto;
-    font-size: 25px;
-    width: 32ch;
+    font-size: 30px;
   }
   .konkurrence p {
     text-align: left;
-    margin-left: 10px;
-    margin-right: auto;
+    font-size: 24px;
+    width: 48ch;
+    margin-top: 30px;
+  }
+  /* FORSIDE - konkurrence - button*/
+  .konkurrence a {
     font-size: 20px;
-    width: 40ch;
+    margin-left: 0;
+    width: 40%;
   }
-  /* FORSIDE konkurrence - button*/
-  /*.btn1konkurrence {
-    font-size: 20px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-left: 10px;
-  }*/
-  /* FORSIDE - jolly quiz*/
-  /*.jollyquizforside {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: center;
+  .konkurrence a:link, .konkurrence a:visited {
+    padding: 14px 50px;
   }
-  .contentjollyquizforside {
-    margin: auto;
-  }
-  .jollyquizforside img {
-    width: 80%;
+  /* FORSIDE - scan din jolly quiz */
+  .jollyquizforside img{
+    width: 90%;
   }
   .jollyquizforside h2 {
     text-align: left;
-    margin-left: 10px;
-    margin-right: auto;
+    font-size: 40px;
+    margin-left: 30px;
   }
   .jollyquizforside p {
     text-align: left;
-    margin-left: 10px;
-    margin-right: auto;
-    font-size: 25px;
-    width: 35ch;
-  }*/
-  /* forside jolly quiz - button*/
-  /*.btnjollyquizforside {
+    font-size: 24px;
+    width: 48ch;
+    margin-top: 10px;
+    margin-left: 30px;
+  }
+  /* FORSIDE - scan din jolly quiz - button */
+  .jollyquizforside a {
     font-size: 20px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-left: 10px;
-  }*/
-
+    margin-left: 30px;
+    width: 40%;
+  }
+  .jollyquizforside a:link, .konkurrence a:visited {
+    padding: 14px 50px;
+  }
   /* JOLLY QUIZ - header */
   .headerjollyquiz h1 {
     padding-left: 52%;
@@ -1984,5 +2186,21 @@ footer a:hover {
     content: "";
     display: table;
     clear: both;
+  }
+  /* JOLLY MOMENT - header */
+  .hashtagjollymoment {
+    width: 12%;
+    top: 46%;
+    left: 14%;
+  }
+  .headerjollymoment h1 {
+    top: 23%;
+    left: 16%;
+    font-size: 44px;
+  }
+  .headerjollymoment h2 {
+    top: 50%;
+    left: 28%;
+    font-size: 29px;
   }
 }
